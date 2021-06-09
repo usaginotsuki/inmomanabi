@@ -14,6 +14,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { PortoviejoCityComponent } from './portoviejo-city/portoviejo-city.component';
 import { HomePageComponent } from './home-page/home-page.component';  
 import { MatCardModule } from '@angular/material/card';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -31,8 +33,9 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatCardModule
-    
+    MatCardModule,
+    NgbModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
