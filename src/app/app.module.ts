@@ -16,6 +16,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MatCardModule } from '@angular/material/card';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -35,9 +36,13 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FlexLayoutModule,
     MatCardModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    NgImageSliderModule,
+    MatIconModule, 
+    MatButtonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [MatIconModule, MatButtonModule],
 })
 export class AppModule { }

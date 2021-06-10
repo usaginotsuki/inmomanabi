@@ -1,9 +1,12 @@
 .property{
     max-width: 400px;
+    min-width: 300px;
     text-align: center;
     border-style: solid;
     border-width: medium;
     background-color: rgba(109, 92, 92, 0.185);
+    margin-bottom: 10px;
+    justify-content: center
   }
 
 .text{
@@ -12,4 +15,8 @@
 
 .container-fluid{
     text-align: justify;
+}
+
+.portada{
+    max-width: 350px;
 }

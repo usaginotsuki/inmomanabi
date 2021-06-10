@@ -1,93 +1,146 @@
 <div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <mat-card class="property">
-                <mat-card-header> 
-                  <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title>Terreno esquinero</mat-card-title>
-                  <mat-card-subtitle>Frente al Mall del Sol Guayaquil </mat-card-subtitle>
-                </mat-card-header>
-                <video width="320" height="240" controls>
-                    <source src="assets/house.mp4" type="video/mp4">
-                </video>
-                <mat-card-content class="text">
-                  <p>
-                    Libre de gravamen<br>
-                    Cuenta con un galpón<br>  
-                    Tamaño 1.723 mts2<br>
-                    Documentación en regla<br> 
-                    1'400.000<br>
-                    Entre Av Francisco de Orellana y Av Juan Tanca Marengo<br>
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                  <button onclick="window.open('https://www.facebook.com/inmomanabiec','_blank')" mat-button><fa-icon [icon]="faFacebookSquare" size="3x"></fa-icon>
-                  </button>
-                  <button onclick="window.open('https://api.whatsapp.com/send?phone=5930983026931&text=Pido%20informacion%20acerca%20de%20un%20inmueble','_blank')" mat-button><fa-icon [icon]="faWhatsappSquare" size="3x"></fa-icon></button>
-                </mat-card-actions>
-              </mat-card>
-              
-        </div>
-
-        <div class="col" >
-        
-            <mat-card class="property">
-                <mat-card-header> 
-                  <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title>Terreno esquinero</mat-card-title>
-                  <mat-card-subtitle>Frente al Mall del Sol Guayaquil </mat-card-subtitle>
-                </mat-card-header>
-                <video width="320" height="240" controls>
-                    <source src="assets/house.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <mat-card-content class="text">
-                  <p>
-                    Libre de gravamen<br>
-                    Cuenta con un galpón<br>  
-                    Tamaño 1.723 mts2<br>
-                    Documentación en regla<br> 
-                    1'400.000<br>
-                    Entre Av Francisco de Orellana y Av Juan Tanca Marengo<br>
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                  <button mat-button>LIKE</button>
-                  <button mat-button>SHARE</button>
-                </mat-card-actions>
-              </mat-card>
-              
-        </div>
-
-        <div class="col" >
-        
-            <mat-card class="property">
-                <mat-card-header> 
-                  <div mat-card-avatar class="example-header-image"></div>
-                  <mat-card-title>Terreno esquinero</mat-card-title>
-                  <mat-card-subtitle>Frente al Mall del Sol Guayaquil </mat-card-subtitle>
-                </mat-card-header>
-                <video width="320" height="240" controls>
-                    <source src="assets/house.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <mat-card-content class="text">
-                  <p>
-                    Libre de gravamen<br>
-                    Cuenta con un galpón<br>  
-                    Tamaño 1.723 mts2<br>
-                    Documentación en regla<br> 
-                    1'400.000<br>
-                    Entre Av Francisco de Orellana y Av Juan Tanca Marengo<br>
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                  <button mat-button><fa-icon [icon]="faFacebookSquare" size="3x"></fa-icon></button>
-                  <button mat-button>SHARE</button>
-                </mat-card-actions>
-              </mat-card>
-              
-        </div>
+  <div class="row">
+    <div class="col">
+      <mat-card class="property">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Terreno esquinero</mat-card-title>
+          <mat-card-subtitle
+            >Frente al Mall del Sol Guayaquil
+          </mat-card-subtitle>
+        </mat-card-header>
+        <video width="100%" controls>
+          <source src="assets/house.mp4" type="video/mp4" />
+        </video>
+        <mat-card-content class="text">
+          <p>
+            <br />
+            Libre de gravamen<br />
+            Cuenta con un galpón<br />
+            Tamaño 1.723 mts2<br />
+            Documentación en regla<br />
+            1'400.000<br />
+            Entre Av Francisco de Orellana y Av Juan Tanca Marengo<br />
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            onclick="window.open('https://fb.watch/611QDWAoN0/','_blank')"
+            mat-button
+          >
+            <fa-icon [icon]="faFacebookSquare" size="3x"></fa-icon>
+          </button>
+          <button
+            onclick="window.open('https://api.whatsapp.com/send?phone=983026931&text=Pido%20informacion%20acerca%20del%20*Terreno%20esquinero*%20frente%20al%20*Mall%20del%20Sol%20Guayaquil*','_blank')"
+            mat-button
+          >
+            <fa-icon [icon]="faWhatsappSquare" size="3x"></fa-icon>
+          </button>
+          <button
+            onclick="window.open('https://m.me/inmomanabiec','_blank')"
+            mat-button
+          >
+            <fa-icon [icon]="faFacebookMessenger" size="3x"></fa-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
     </div>
-    
+
+    <div class="col">
+      <mat-card class="property">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Lote de terreno</mat-card-title>
+          <mat-card-subtitle>Puerto Cayo, Manabí</mat-card-subtitle>
+        </mat-card-header>
+        <ng-image-slider
+          [images]="puertoCayo"
+          [infinite]="true"
+          [manageImageRatio]="true"
+          [autoSlide]="3"
+          r
+          class="portada"
+          #nav
+        ></ng-image-slider>
+        <mat-card-content class="text">
+          <p>
+            <br />
+            Lote de terreno en venta<br />
+            Segunda linea de mar <br />
+            50$ por metro<br />
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            onclick="window.open('https://www.facebook.com/inmomanabiec/posts/3051555421764268','_blank')"
+            mat-button
+          >
+            <fa-icon [icon]="faFacebookSquare" size="3x"></fa-icon>
+          </button>
+          <button
+            onclick="window.open('https://api.whatsapp.com/send?phone=5930983026931&text=Pido%20informacion%20acerca%20de%20un%20inmueble','_blank')"
+            mat-button
+          >
+            <fa-icon [icon]="faWhatsappSquare" size="3x"></fa-icon>
+          </button>
+          <button
+            onclick="window.open('https://m.me/inmomanabiec','_blank')"
+            mat-button
+          >
+            <fa-icon [icon]="faFacebookMessenger" size="3x"></fa-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div class="col">
+      <mat-card class="property">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Casa amoblada de alquilar</mat-card-title>
+          <mat-card-subtitle>Portoviejo, zona residencial</mat-card-subtitle>
+        </mat-card-header>
+        <ng-image-slider
+          [images]="AmobladaPortoviejo"
+          [infinite]="true"
+          [manageImageRatio]="true"
+          [autoSlide]="3"
+          class="portada"
+          #nav
+        ></ng-image-slider>
+        <mat-card-content class="text">
+          <p>
+            <br />
+            Ideal para empresas, ejecutivos, medicos, entre otros<br />
+            Cerca de centros comerciales, entidad bancarias, centros medicos,
+            etc <br />
+            3 habitaciones <br />
+            Incluye, splits, lavadora, juego, de sala, comedor, cocina, nevera,
+            juego de dormitorio, televisores, área de lavandería, etc.<br />
+            500 dólares( No incluye servicios básicos) <br />
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            onclick="window.open('https://www.facebook.com/inmomanabiec/posts/3043494079237069','_blank')"
+            mat-button
+          >
+            <fa-icon [icon]="faFacebookSquare" size="3x"></fa-icon>
+          </button>
+          <button
+            onclick="window.open('https://api.whatsapp.com/send?phone=5930983026931&text=Pido%20informacion%20acerca%20de%20un%20inmueble','_blank')"
+            mat-button
+          >
+            <fa-icon [icon]="faWhatsappSquare" size="3x"></fa-icon>
+          </button>
+          <button
+            onclick="window.open('https://m.me/inmomanabiec','_blank')"
+            mat-button
+          >
+            <fa-icon [icon]="faFacebookMessenger" size="3x"></fa-icon>
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
 </div>
