@@ -2,11 +2,11 @@
     max-width: 400px;
     min-width: 300px;
     text-align: center;
-    border-style: solid;
-    border-width: medium;
+    border-style:dotted;
+    border-width:2px;
     background-color: rgba(109, 92, 92, 0.185);
     margin-bottom: 10px;
-    justify-content: center
+    justify-content: space-between;
   }
 
 .text{
@@ -19,4 +19,9 @@
 
 .portada{
     max-width: 350px;
+}
+
+mat-card-actions{
+    border-style: dashed;
+    border-width:0.5px;
 }
